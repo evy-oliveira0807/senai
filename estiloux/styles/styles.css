@@ -1,96 +1,149 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap'); 
-
-*{
-    margin: 0%;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+* {
+    margin: 0;
     padding: 0%;
     box-sizing: border-box;
-
 }
 
-
-
-
-body{
-
+body {
     font-family: 'Quicksand', sans-serif;
-    
-     color: grey;}
-
-     /* configuraçoes gericas */
-     .container-grid{
-
-        width: 80%;
-        margin: 0%;background-color: purple;
-
-     }
-
-     /* cabeçalho */
-
-     header { background-color: grey;
-    
-    }
-
-    header .header-flex{
-
-        display:flex;
-        justify-content: space-between;
-
-    }
-
-    header h1{
-        
-        color: white;
-        font-weight: 300;
-        border: 2px solid white;
-
-    }
-
-    header h1 #logoux{
-        font-weight: 600;
-        font-style: italic;
-    }
-
-    header nav{
-        border: 2px solid white;
-   }
-
-    
-
-    header nav a{
-        color:white;
-        text-decoration: none;
-     
+    color: grey;
+    background-color: #edeced;
 }
-     
 
-    /* h2 {
-       
-     width: 300px;
 
-     height: 10px;
+/* configuraçoes gericas */
 
-     boder: 1px 
+.container-grid {
+    width: 80%;
+    max-width: 1000px;
+    /*limite maximo de largura*/
+    min-width: 992px;
+    /*limite minimo de largura*/
+    margin: 0 auto;
+    /*margem laterai automticas*/
+    /* background-color: yellowgreen; */
+}
 
-     margin-top: 10px;
-     
-     padding-top: 0px;
 
-     right: 30px;
+/* cabeçalho */
 
-     margin-right: 20px;
+header {
+    background-color: rgb(116, 87, 87);
+}
 
-     left: 20px;
-      
-     margin-left: 20px;
+header .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-     bottom: 100px;
-     margin-bottom: 40px;
+header h1 {
+    color: white;
+    font-weight: 300;
+    /*border: 2px solid white;*/
+}
 
-    } */
+header h1 #logoux {
+    font-weight: 600;
+    font-style: italic;
+}
 
-    h2{
+header nav {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid white; */
+}
 
-        width: 300px
-    }
+header nav a {
+    color: white;
+    text-decoration: none;
+}
 
+
+/* ****main**** */
+
+.colunas-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .coluna1 {
+    width: 75%;
+    /* background-color: green; */
+}
+
+
+/* imagem do lapis */
+
+main .coluna1 #lapis {
+    width: 100%;
+}
+
+main .coluna2 {
+    width: 20%;
+    /* background-color: green; */
+}
+
+main .coluna1 h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+main .coluna1 p {
+    /* margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px; */
+    margin: 0 20px 20px 20px;
+    line-height: 24px;
+}
+
+main img {
+    width: 100%;
+}
+
+main .colunas-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+main .coluna1 {
+    width: 75%;
+    background-color: white;
+}
+
+main .coluna2 {
+    width: 20%;
+}
+
+main .coluna2 Article {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+
+/*  footer */
+
+footer {
+    padding-top: 20px;
+    padding-left: 0%;
+    padding-bottom: 20px;
+    padding-right: 0%;
+    background-color: #676767;
+    padding: 0%;
+    /*top right bottom left*/
+    padding: 0%;
+    /* top/bottom right/left*/
+    padding: 0 20px;
+    /* top right/left bottom*/
+    padding: 10px 10px 10px 10px;
+    /* top right bottom left*/
+    padding: 20px 0;
+    color: white;
+    background-color: #676767;
+}
